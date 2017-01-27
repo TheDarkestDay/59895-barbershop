@@ -1,4 +1,17 @@
 
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  -webkit-padding-start: 0;
+}
+
+
 body {
   font-size: 14px;
   font-weight: bold;
@@ -120,5 +133,27 @@ h2 {
 
 .footer-credits {
   width: 140px;
+  float: right;
+}
+
+.item-gallery {
+  width: 460px;
+  float: left;
+  margin-right: 80px;
+  font-size: 0;
+}
+
+.gallery-image-list > li {
+  display: inline-block;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.gallery-image-list > li:last-child {
+  margin-right: 0;
+}
+
+.item-description {
+  width: 400px;
   float: right;
 }
