@@ -10,32 +10,38 @@
     background-position: -5px -5px;
 }
 
+.sprite-dot {
+    width: 8px;
+    height: 10px;
+    background-position: -5px -27px;
+}
+
 .sprite-icon-cross {
     width: 12px;
     height: 12px;
-    background-position: -5px -27px;
+    background-position: -5px -47px;
 }
 
 .sprite-icon-login {
     width: 18px;
     height: 16px;
-    background-position: -5px -49px;
+    background-position: -5px -69px;
 }
 
 .sprite-social-fb {
     width: 12px;
     height: 22px;
-    background-position: -5px -75px;
+    background-position: -5px -95px;
 }
 
 .sprite-social-inst {
     width: 21px;
     height: 21px;
-    background-position: -5px -107px;
+    background-position: -5px -127px;
 }
 
 .sprite-social-vk {
     width: 25px;
     height: 16px;
-    background-position: -5px -138px;
+    background-position: -5px -158px;
 }

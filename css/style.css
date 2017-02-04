@@ -132,7 +132,7 @@ h2 {
   position: absolute;
   background-image: url('../img/spritesheet.png');
   background-repeat: no-repeat;
-  background-position: -5px -49px;
+  background-position: -5px -69px;
   width: 18px;
   height: 16px;
   left: 13px;
@@ -191,6 +191,67 @@ h2 {
 .catalog-filter {
   float: left;
   width: 220px;
+}
+
+
+.catalog-filter fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+}
+
+.catalog-filter input[type="checkbox"] +  label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  margin-right: 25px;
+}
+
+.catalog-filter input[type="checkbox"]:checked + label::before {
+  background-image: url('../img/spritesheet.png');
+  background-repeat: no-repeat;
+  background-position: -3px -45px;
+}
+
+
+.catalog-filter fieldset legend {
+  font-size: 24px;
+}
+
+.catalog-filter input[type="checkbox"],
+.catalog-filter input[type="radio"] {
+  display: none;
+}
+
+.catalog-filter input[type="radio"] + label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  margin-right: 25px;
+}
+
+.catalog-filter input[type="radio"]:checked + label::before {
+  background-image: url('../img/spritesheet.png');
+  background-repeat: no-repeat;
+  background-position: -1px -24px;
+}
+
+.catalog-filter button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .catalog-items-list {
