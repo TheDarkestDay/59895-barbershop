@@ -226,6 +226,10 @@ h2 {
   display: none;
 }
 
+.catalog-filter label:hover {
+  color: #663d15;
+}
+
 .catalog-filter input[type="radio"] + label::before {
   content: '';
   display: inline-block;
@@ -251,6 +255,10 @@ h2 {
   padding: 16px 30px;
   font-weight: bold;
   font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.catalog-filter button:hover {
+  background-color: #663d15;
 }
 
 .catalog-items-list {
@@ -284,7 +292,7 @@ h2 {
 }
 
 .catalog-nav li:not(.current-page) a:hover {
-  background-color: #242424;
+  background-color: #663d15;
 }
 
 .catalog-nav a {
@@ -324,14 +332,14 @@ h2 {
   margin-bottom: 0;
 }
 
-.catalog-item .item-panel {
+.item-panel {
   padding-top: 11px;
   padding-left: 15px;
   padding-bottom: 15px;
   padding-right: 15px;
 }
 
-.catalog-item .item-price {
+.item-panel .item-price {
   display: inline-block;
   vertical-align: top;
   background-color: #e6e6e6;
@@ -341,7 +349,7 @@ h2 {
   padding-right: 25px;
 }
 
-.catalog-item .btn {
+.item-panel .btn {
   display: inline-block;
   vertical-align: top;
   background-color: #000000;
@@ -354,8 +362,12 @@ h2 {
   margin-left: -2px;
 }
 
-.catalog-item .btn:hover {
-  background-color: #242424;
+.item-panel .btn:hover {
+  background-color: #663d15;
+}
+
+.item-description .item-panel {
+  padding-left: 0;
 }
 
 .catalog-item:nth-child(3n) {
@@ -441,7 +453,7 @@ h2 {
   display: block;
   background-color: #000000;
   padding: 9px 20px;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .footer-credits a:hover {
@@ -454,12 +466,19 @@ h2 {
   float: left;
   margin-right: 80px;
   font-size: 0;
+  margin-bottom: 50px;
 }
 
 .gallery-image-list > li {
   display: inline-block;
   width: 140px;
   margin-right: 20px;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.item-gallery > .gallery-current-image {
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  margin-bottom: 20px;
 }
 
 .gallery-image-list > li:last-child {
@@ -469,4 +488,39 @@ h2 {
 .item-description {
   width: 400px;
   float: right;
+}
+
+.item-description .item-id {
+  float: right;
+  color: #aeaeae;
+}
+
+.item-description p {
+  margin-bottom: 33px;
+}
+
+.item-features {
+  margin-top: 55px;
+}
+
+.item-features ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 17px;
+}
+
+.item-features li {
+  margin-top: 5px;
+}
+
+.item-features li::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #000000;
+  width: 10px;
+  height: 10px;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+  margin-right: 10px;
 }
